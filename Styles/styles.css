@@ -93,7 +93,7 @@ a:hover {
 
 .slider {
     display: flex;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
     overflow: hidden;
 }
@@ -102,7 +102,7 @@ a:hover {
     display: flex;
     padding: 0;
     width: 100%;
-    animation: cambio 10s infinite;
+    animation: cambio 10s infinite linear;
 }
 
 .slider li {
@@ -112,9 +112,9 @@ a:hover {
 
 .slider img{
     width: 100%;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+/* El Keyframe se debe ajustar para las imagenes que se le deban dar */
 
 @keyframes cambio {
     0% { margin-left: 0; }
