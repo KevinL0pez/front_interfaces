@@ -1,6 +1,138 @@
 @charset 'utf-8';
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+:root{
+    --one : rgb(134, 134, 134);
+    --two : black;
+    --three : white;
+    --four : rgb(194, 194, 194);
+    --fondo : rgb(39, 194, 194);
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* home */
+
+.top {
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--fondo);
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo img {
+    width: 220px;
+    height: 120px;
+    margin: 10px 0 10px 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    color: var(--four);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.link1 a{
+    color: var(--one);
+    border-radius: 15px;
+    padding: 8px 1.8em 8px 1.8em;
+    margin: 0 1em 0 0;
+    background-color: var(--three);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.link2 a{
+    color: var(--one);
+    border-radius: 15px;
+    padding: 8px 0.8em 8px 0.8em;
+    margin: 0 1em 0 1em;
+    background-color: var(--three);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.link3 a{
+    color: var(--one);
+    border-radius: 15px;
+    padding: 8px 0.8em 8px 0.8em;
+    margin: 0 1em 0 1em;
+    background-color: var(--three);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.link4 input{
+    color: var(--one);
+    padding: 12px 10px 12px 10px;
+    border-radius: 15px;
+    margin: 0 2em 0 2em;
+    border: solid 2px white;
+    box-shadow: none;
+    outline:none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.slider {
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    animation: cambio 10s infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -80%; }
+    45% { margin-left: -80%; }
+
+    50% { margin-left: -160%; }
+    70% { margin-left: -160%; }
+
+    75% { margin-left: -240;}
+    100% { margin-left: -240%; }
+
+}
+
+
+
 
 /* user home */
 
