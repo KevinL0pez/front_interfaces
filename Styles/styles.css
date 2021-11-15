@@ -12,6 +12,7 @@
     --three : white;
     --four : rgb(194, 194, 194);
     --fondo : rgb(39, 194, 194);
+    --button : rgb(251,189,188);
 }
 
 li{
@@ -180,12 +181,90 @@ a {
     background-color: var(--fondo);
 }
 
-
-/* user home */
-
 /* login */
 
 /* sign up */
+
+.medium .content {
+    display: flex;
+    background-image:  url("../Images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.medium .content .gologin {
+    display: flex;
+    background-color: var(--fondo);
+    width: 40%;
+    margin: 6em 0em 6em 6em;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medium .content .form{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 40%;
+    margin: 6em 6em 6em 0em;
+    border-radius: 15px;
+}
+
+.medium .content .formcontent{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 100%;
+    margin: 2em 2em 2em 2em;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gologin .linklogin a {
+    font-size: 30px;
+    color: var(--one);
+    border-radius: 15px;
+    padding: 8px 0.8em 8px 0.8em;
+    background-color: var(--button);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.medium .content .formcontent .forms input{
+    display: flex;
+    color: var(--one);
+    padding: 5px 10rem 5px 2em;
+    border-radius: 15px;
+    margin: 0em 5em 1em 5em;
+    border: solid 2px white;
+    box-shadow: none;
+    outline:none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.medium .content .formcontent .forms p{
+    display: flex;
+    color: var(--one);
+    margin: 0.5em 0em 0em 5em;
+}
+
+.medium .content .formcontent .goregister input{
+    color: var(--one);
+    background-color: var(--button);
+    padding: 12px 3em 12px 3em;
+    border-radius: 15px;
+    margin: 0 2em 0 2em;
+    border: solid 2px var(--button);
+    box-shadow: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* user home */
 
 /* request appointment */
 
