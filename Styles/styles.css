@@ -46,10 +46,10 @@ a {
     color: var(--four);
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-a:hover {
+.links  a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -91,8 +91,11 @@ a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/* Falta ajustar esta parte para que no se haga el scroll horizontal*/
+
 .slider {
     display: flex;
+    width: 100%;
     max-width: 80%;
     margin: auto;
     overflow: hidden;
@@ -100,13 +103,13 @@ a:hover {
 
 .slider ul{
     display: flex;
-    padding: 0;
     width: 100%;
+    margin: 1em;
     animation: cambio 10s infinite linear;
 }
 
 .slider li {
-    width: 100%;
+    width: 100vw;
     list-style: none;
 }
 
@@ -131,7 +134,51 @@ a:hover {
 
 }
 
+.post {
+    display: flex;
+    margin: 1em 1em 1em 1em;
+    flex-direction: column;
+    align-items: center;
+}
 
+.titles{
+    display: flex;
+    text-align: center;
+    max-width: 70vw;
+}
+
+.titles h2{
+    padding-bottom: 1em;
+}
+
+.titles p{
+    padding-bottom: 1em;
+}
+
+.title1 {
+    border-radius: 10px;
+    padding: 1em 1em 1em 1em;
+    box-shadow: 0 0 5px var(--fondo);
+    
+}
+.title2 {
+    border-radius: 10px;
+    padding: 1em 1em 1em 1em;
+    box-shadow: 0 0 5px var(--fondo);
+}
+
+.title3 {
+    border-radius: 10px;
+    padding: 1em 1em 1em 1em;
+    box-shadow: 0 0 5px var(--fondo);
+}
+
+.bot {
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    background-color: var(--fondo);
+}
 
 
 /* user home */
