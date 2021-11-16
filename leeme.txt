@@ -18,3 +18,13 @@ Sign Up:
 
     V1.1:
         La interfaz del register está en un 95%, aún falta arreglar detalles.
+
+@author Kevin López
+Login:
+    V1.0:
+        In progress
+
+@author Kevin López
+User Home:
+    V1.0:
+        In progress

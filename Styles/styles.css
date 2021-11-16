@@ -7,12 +7,14 @@
 }
 
 :root{
-    --one : rgb(134, 134, 134);
+    --one : rgb(80, 80, 80);
     --two : black;
     --three : white;
     --four : rgb(194, 194, 194);
     --fondo : rgb(39, 194, 194);
     --button : rgb(251,189,188);
+    --transparenteUno : rgba(255, 255, 255, 0.24);
+    --transparenteDos : rgba(255, 255, 255, 0.253);
 }
 
 li{
@@ -183,6 +185,84 @@ a {
 
 /* login */
 
+.wallcontent .wallform{
+    display: flex;
+    background-color: var(--transparenteUno);
+    width: 40%;
+    margin: 6em 0em 6em 6em;
+    border-radius: 15px;
+}
+
+.wallcontent .wallform .wallformcontent{
+    display: flex;
+    background-color: var(--transparenteDos);
+    width: 100%;
+    margin: 5em 2em 5em 2em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wallcontent .wallform .wallformcontent .wallforms input{
+    display: flex;
+    color: var(--one);
+    padding: 12px 10rem 12px 2em;
+    border-radius: 15px;
+    margin: 1em 5em 1em 5em;
+    border: solid 2px white;
+    box-shadow: none;
+    outline:none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.wallcontent .wallform .wallformcontent .wallforms p {
+    display: flex;
+    color: var(--two);
+    margin: 0.5em 0em 0em 5em;
+}
+
+.wallcontent .wallform .wallformcontent .wallgoregister input {
+    color: var(--one);
+    background-color: var(--button);
+    padding: 12px 3em 12px 3em;
+    border-radius: 15px;
+    margin: 1em 2em 0 2em;
+    border: solid 2px var(--button);
+    box-shadow: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.wallform .wallcontent{
+    display: flex;
+    background-image:  url("../Images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.wallregister{
+    display: flex;
+    background-color: var(--fondo);
+    width: 40%;
+    margin: 6em 6em 6em 0em;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wallregister .linkregister a{
+    font-size: 30px;
+    color: var(--one);
+    border-radius: 15px;
+    padding: 8px 0.8em 8px 0.8em;
+    background-color: var(--button);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
 /* sign up */
 
 .medium .content {
@@ -208,7 +288,7 @@ a {
 
 .medium .content .form{
     display: flex;
-    background-color: rgba(255, 255, 255, 0.63);
+    background-color: var(--transparenteUno);
     width: 40%;
     margin: 6em 6em 6em 0em;
     border-radius: 15px;
@@ -216,10 +296,9 @@ a {
 
 .medium .content .formcontent{
     display: flex;
-    background-color: rgba(255, 255, 255, 0.63);
+    background-color: var(--transparenteDos);
     width: 100%;
     margin: 2em 2em 2em 2em;
-    border-radius: 15px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -248,7 +327,7 @@ a {
 
 .medium .content .formcontent .forms p{
     display: flex;
-    color: var(--one);
+    color: var(--two);
     margin: 0.5em 0em 0em 5em;
 }
 
