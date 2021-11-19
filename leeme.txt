@@ -17,12 +17,15 @@ Sign Up:
         In progress
 
     V1.1:
-        La interfaz del register está en un 95%, aún falta arreglar detalles.
+        La interfaz del Register está en un 95%, aún falta arreglar detalles.
 
 @author Kevin López
 Login:
     V1.0:
         In progress
+
+    V1.1:
+        La interfaz del Login está en un 95%, aún falta arreglar detalles.
 
 @author Kevin López
 User Home:
